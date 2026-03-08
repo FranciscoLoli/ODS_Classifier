@@ -1,6 +1,10 @@
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 from nltk.tokenize import RegexpTokenizer
+
+nltk.download("stopwords")
+nltk.download("punkt")
 
 spanish_stopwords = set(stopwords.words('spanish'))
 stemmer = SnowballStemmer("spanish")
