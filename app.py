@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+from preprocess import text_preprocess
 
 
 model = joblib.load("modelo_ods.pkl")
